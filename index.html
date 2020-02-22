@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -8,33 +9,36 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Creative Project 2</title>
   </head>
   <body>
-    <h1><a href="/index.html">Book Search</a></h1>
+    <h1><a href="/index.html">Math Homework Helper</a></h1>
     <form>
       <div class="form-group">
-        <label for="exampleInputEmail1">Book Title or Author</label>
+        <label for="searchInput">Equation</label>
         <input
-          type="email"
+          type="text"
           class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
+          id="equationInput"
+          aria-describedby="equationHelp"
         />
-        <small id="emailHelp" class="form-text text-muted"
-          >Try to be specific.</small
+        <small id="equationHelp" class="form-text text-muted"
+          >Equation you want to perform an operation.</small
         >
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Look for available rentals</label
-          >
-        </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <select id="selector">
+          <option value="simplify">Simplify</option>
+          <option value="factor">Factor</option>
+          <option value="derive">Derive</option>
+          <option value="integrate">Integrate</option>
+        </select>
       </div>
+      <button id="searchSubmit" type="submit" class="btn btn-primary">
+        Get Help
+      </button>
     </form>
-    <div id="result"></div>
-    <script src="script.js"></script>
+    <div class="result-container"></div>
+    <div class="result" id="result"></div>
+    <script text="type/javascript" src="/script.js"></script>
   </body>
 </html>
