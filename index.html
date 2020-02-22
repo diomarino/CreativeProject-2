@@ -12,7 +12,7 @@
     <title>Creative Project 2</title>
   </head>
   <body>
-    <h1>Book Search</h1>
+    <h1><a href="/index.html">Book Search</a></h1>
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Book Title or Author</label>
@@ -25,8 +25,14 @@
         <small id="emailHelp" class="form-text text-muted"
           >Try to be specific.</small
         >
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Look for available rentals</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
       </div>
-      <button type="submit" class="btn btn-primary">Search</button>
     </form>
     <div id="result"></div>
     <script src="script.js"></script>
