@@ -18,5 +18,36 @@
   display: flex;
 }
 
+.header-container {
+  background-color: #007bff;
+}
+
+.header {
+  font-family: "Righteous";
+  text-align: center;
+  color: white;
+}
+
+.footer-container {
+  background-color: #007bff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  font-family: "Righteous";
+  text-align: center;
+  color: white;
+}
+
 .result {
+  width: 800px;
+  border: 2px solid #007bff;
+  font-family: "Anton";
+  text-align: center;
+  text-size-adjust: 200px;
+  padding: 50px;
+  margin: 20px;
 }
