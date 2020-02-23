@@ -14,12 +14,24 @@
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .result-container {
+    display: flex;
+    width: 100%;
+  }
+}
+
 .result-container {
   display: flex;
 }
 
 .header-container {
   background-color: #007bff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .header {
@@ -50,4 +62,16 @@
   text-size-adjust: 200px;
   padding: 50px;
   margin: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .result {
+    width: 100%;
+    border: 2px solid #007bff;
+    font-family: "Anton";
+    text-align: center;
+    text-size-adjust: 200px;
+    padding: 50px;
+    margin: 20px;
+  }
 }
